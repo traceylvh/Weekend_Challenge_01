@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Forms Project</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</head>
+
+<body>
+
+  <main>
+
+
+    <h1>Monthly Salary Cost Calculator</h1>
+
+  <div class="form-style">
+
+  <form id="employeeForm">
+
+    <h2>Enter Employee Data</h2>
+
+    <p>
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" placeholder="First name"/>
+    </p>
+
+    <p>
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Last name"/>
+    </p>
+
+    <p>
+      <label for="empID">Employee ID</label>
+      <input type="text" id="empID" name="empID" placeholder="ID"/>
+    </p>
+
+    <p>
+      <label for="title">Job Title</label>
+      <input type="text" id="title" name="title" placeholder="Title"/>
+    </p>
+
+    <p>
+      <label for="salary">Yearly Salary</label>
+      <input type="text" id="salary" name="salary" placeholder="Salary"/>
+    </p>
+
+    <p>
+      <input type="submit" value="Submit" />
+    </p>
+
+
+  </form>
+
+  </div>
+
+  <div class="results">
+  <!-- putting total cost first since that is what user is likely most interested in -->
+    <h2>Total Cost</h2>
+
+    <p class="monthly-total-comp"></p>
+
+    <!-- put entry list second since this seems like secondary to total cost -->
+
+    <h2>Entries Confirmed</h2>
+
+    <ul class="output-container">
+
+    </ul>
+
+  </div>
+
+
+</main>
+
+
+</body>
+
+</html>
